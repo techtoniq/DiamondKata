@@ -24,7 +24,7 @@ namespace DiamondKata
                 {
                     var insideSpaceCount = (i * 2) - 1;
                     var insideSpace = new string(' ', insideSpaceCount);
-                    diamondText = $"{char.ConvertFromUtf32('A' + i)}{insideSpace}{char.ConvertFromUtf32('A' + i)}";
+                    diamondText = $"{(char)('A' + i)}{insideSpace}{(char)('A' + i)}";
                 }
                 textLines.Add($"{outsideSpace}{diamondText}{outsideSpace}");
                 outsideSpaceCount--;
